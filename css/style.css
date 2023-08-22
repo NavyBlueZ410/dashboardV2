@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --color-primary: #1C1B3B;
+    --color-secondary: #D97943;
+    --color-success: #75bb74;
+    --color-danger: #D32626;
+}
+.sidebar{
+    background-color: var(--color-primary);
+    width: calc(200px + 5vw);
+    position: fixed;
+    min-height: 100vh;
+    height: auto;
+    left: 0;
+    transition: 0.3s ease;
+}
+.sidebar .title-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    color: #fff;
+}
+.sidebar .title-header i{
+    position: relative;
+    font-size: calc(2rem + 0.15vw);
+    background-color: transparent;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: none;
+}
+.sidebar .menu{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5rem;
+}
+.sidebar .menu .menu-list{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    grid-gap: 1rem;
+    font-size: calc(1rem + 0.10vw);
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 0.5rem;
+}
+.sidebar .menu .menu-list:hover{
+    background-color: var(--color-secondary);
+    border-radius: 0.5rem;
+    transition: 0.3s ease;
+}
+.content{
+    margin-left: calc(200px + 5vw);
+    transition: 0.3s ease;
+}
+.sidebar.active{
+    left: calc(-250px - 5vw);
+    transition: 0.3s ease;
+}
+.content.active{
+    margin-left: 0;
+    transition: 0.3s ease;
+}
+.sidebar.active .title-header i{
+    top: 5rem;
+    left: 4rem;
+    background-color: var(--color-danger);
+    border-radius: 0 0.5rem 0.5rem 0;
+    display: block;
+    transition: 0.3s ease;
+}
+.container{
+    padding: calc(1rem + 0.25vw);
+    width: 100%;
+}
+.title-content{
+    background-color: var(--color-secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    align-items: center;
+}
