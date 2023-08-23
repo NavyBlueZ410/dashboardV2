@@ -12,6 +12,8 @@
     --color-secondary: #D97943;
     --color-success: #75bb74;
     --color-danger: #D32626;
+    --color-warning: #FFE05D;
+    --color-white: #fff;
 }
 .sidebar{
     background-color: var(--color-primary);
@@ -27,13 +29,13 @@
     justify-content: space-between;
     align-items: center;
     margin: 1rem;
-    color: #fff;
+    color: var(--color-white);
 }
 .sidebar .title-header i{
     position: relative;
-    font-size: calc(2rem + 0.15vw);
+    font-size: calc(2rem + 0.1vw);
     background-color: transparent;
-    padding: 0.5rem;
+    padding: 0.35rem;
     border-radius: 0.5rem;
     display: none;
 }
@@ -51,7 +53,7 @@
     background-color: transparent;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    color: #fff;
+    color: var(--color-white);
     cursor: pointer;
     transition: 0.3s ease;
     margin-bottom: 0.5rem;
@@ -74,8 +76,8 @@
     transition: 0.3s ease;
 }
 .sidebar.active .title-header i{
-    top: 5rem;
-    left: 4rem;
+    top: 7rem;
+    left: 3.5rem;
     background-color: var(--color-danger);
     border-radius: 0 0.5rem 0.5rem 0;
     display: block;
@@ -89,6 +91,6 @@
     background-color: var(--color-secondary);
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    color: #fff;
+    color: var(--color-white);
     align-items: center;
 }
