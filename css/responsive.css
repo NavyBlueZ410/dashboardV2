@@ -14,3 +14,17 @@
     }
 
 }
+
+@media only screen and (max-height: 750px) {
+    .sidebar .menu{
+        height: 450px;
+    }
+
+}
+@media only screen and (max-height: 600px) {
+    .sidebar .menu{
+        height: 350px;
+    }
+
+}
+
