@@ -35,38 +35,38 @@ let sidebar = `
             <span>Dashboard</span>
         </div>
         <div class="menu-list" onclick="goPage('alert.html')">
-            <i class='bx bxs-dashboard'></i>
+            <i class='bx bxs-bell' ></i>
             <span>Alert</span>
         </div>
         <div class="menu-list" onclick="goPage('table.html')">
-            <i class='bx bxs-dashboard'></i>
+            <i class='bx bx-table'></i>
             <span>Table</span>
         </div>
         <div class="menu-list" onclick="goPage('chart.html')">
-            <i class='bx bxs-dashboard'></i>
+            <i class='bx bxs-bar-chart-alt-2' ></i>
             <span>Chart</span>
         </div>
         <div class="menu-list" onclick="goPage('form.html')">
-            <i class='bx bxs-dashboard'></i>
+            <i class='bx bxs-copy-alt'></i>
             <span>Form</span>
         </div>
         <div class="menu-list" onclick="goPage('card.html')">
-            <i class='bx bxs-dashboard'></i>
+            <i class='bx bxs-credit-card' ></i>
             <span>Card</span>
         </div>
         <div class="menu-list" onclick="goPage('button.html')">
-            <i class='bx bxs-dashboard'></i>
+            <i class='bx bxs-bookmark' ></i>
             <span>Button</span>
         </div>
         <div class="menu-list-dropdown" onclick="openMenuList('list-menu-form')">
             <div class="list-dropdown">
-                <i class='bx bxs-dashboard'></i>
+                <i class='bx bxs-cube' ></i>
                 <span>Authentication</span>
             </div>
             <i class='bx bxs-down-arrow'></i>
         </div>
         <div class="list-menu" id="list-menu-form">
-            <span class="list-item-menu">Login</span>
+            <span class="list-item-menu" onclick="goPage('login.html')">Login</span>
             <span class="list-item-menu">Register</span>
             <span class="list-item-menu">list 3</span>
             <span class="list-item-menu">list 4</span>
@@ -83,9 +83,9 @@ contentSidebar.innerHTML = sidebar
 const checkScreenWidth = () => {
   let sidebar = document.querySelector('.sidebar')
   if (window.screen.width <= 768) {
-    sidebar.classList.add('active')
+    sidebar.classList = 'sidebar active'
   }else{
-    sidebar.classList.remove('active')
+    sidebar.classList = 'sidebar'
   }
 }
 window.addEventListener('resize', checkScreenWidth)
