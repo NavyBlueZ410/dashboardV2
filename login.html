@@ -11,15 +11,56 @@
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
+    <div class="contentLoading" id="loading">
+        <div class="loader">
+            <div class="square-item"></div>
+            <div class="square-item"></div>
+            <div class="square-item"></div>
+            <div class="square-item"></div>
+        </div>
+    </div>
     <div class="content-login">
-        <form action="">
-            <div class="input-form">
+        <form 
+            action="dashboard.html"
+            class="card-login p-1"   
+        >
+            <h1 class="header-content text-center mb-2">Login</h1>
+
+            <div class="input-form mb-1">
+                <i class='bx bxs-user icon-font'></i>
                 <input type="text" name="" placeholder="username">
             </div>
-            <div class="input-form">
-                <input type="text" name="" placeholder="password">
+            <div class="input-form mb-1">
+                <i class='bx bxs-key icon-font' ></i>
+                <input 
+                    type="password"
+                    placeholder="password"
+                    id="password"
+                >
+                <i 
+                    class='bx bx-low-vision icon-end' 
+                    id="show_password"
+                    onclick="showPassword()"
+                ></i>
             </div>
+            <a href="#" class="d-block text-end mb-2" style="color: #000;">Forgot Password?</a>
+            <button class="btn btn-success mb-1 me-1" style="width: 100%;">Login</button>
         </form>
     </div>
+    <script src="./js/sidebar.js"></script>
+    <script>
+        const showPassword = () => {
+            let password = document.getElementById('password')
+            let iconPassword = document.getElementById('show_password')
+
+            if(password.type === 'password'){
+                iconPassword.className = 'bx bx-show icon-end'
+                password.type = 'text'
+            }else{
+                iconPassword.className = 'bx bx-low-vision icon-end'
+                password.type = 'password'
+            }
+        }
+    </script>
 </body>
 </html>

@@ -72,7 +72,7 @@ let sidebar = `
             <span class="list-item-menu">list 4</span>
         </div>
     </div>
-    <div class="footer-menu">
+    <div class="footer-menu" onclick="goPage('login.html')">
         <i class='bx bxs-log-in'></i>
         <span>Logout</span>
     </div>
@@ -83,9 +83,9 @@ contentSidebar.innerHTML = sidebar
 const checkScreenWidth = () => {
   let sidebar = document.querySelector('.sidebar')
   if (window.screen.width <= 768) {
-    sidebar.classList = 'sidebar active'
+    sidebar.className = 'sidebar active'
   }else{
-    sidebar.classList = 'sidebar'
+    sidebar.className = 'sidebar'
   }
 }
 window.addEventListener('resize', checkScreenWidth)
