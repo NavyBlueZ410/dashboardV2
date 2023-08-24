@@ -8,8 +8,12 @@
     list-style: none;
     scroll-behavior: smooth;
 }
+*:focus {
+    outline: none;
+}
 /* reove focus button alert */
 .swal2-popup .swal2-styled:focus { box-shadow: none !important; }
+
 :root{
     --color-primary: #1C1B3B;
     --color-light-primary: #36346d;
@@ -502,4 +506,9 @@
 }
 .header-content{
     margin-bottom: 1rem;
+}
+.content-login{
+    background-color: var(--color-primary);
+    width: 100%;
+    height: 100vh;
 }
