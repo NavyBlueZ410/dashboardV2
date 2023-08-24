@@ -14,7 +14,11 @@
     }
 
 }
-
+@media only screen and (max-width: 600px) {
+    .sidebar.active .title-header i{
+        right: -105vw;
+    }
+}
 @media only screen and (max-height: 750px) {
     .sidebar .menu{
         height: 450px;
@@ -25,6 +29,5 @@
     .sidebar .menu{
         height: 350px;
     }
-
 }
 

@@ -23,8 +23,40 @@
             <div class="title-content">
                 <h2>Alert</h2>
             </div>
+            <h3 class="header-content">Alert ( confirm )</h3>
+            <div>
+                <button 
+                    class="btn btn-secondary mb-1 me-1" 
+                    onclick="alertConfirm('ยืนยันการทดสอบ','คุณต้องการกดยืนยัน','ยืนยันสำเร็จ','คุณทำการทดสอบสำเร็จ')"
+                >
+                    Confirm
+                </button>
+            </div>
+            <h3 class="header-content">Alert</h3>
+            <div>
+                <button 
+                    class="btn btn-success mb-1 me-1" 
+                    onclick="alert('success','สำเร็จ','คุณบันทึกข้อมูลสำเร็จ')"
+                >
+                    Success
+                </button>
+                <button 
+                    class="btn btn-warning mb-1 me-1" 
+                    onclick="alert('warning','แจ้งเตือน','กรุณากรอกข้อมูลการบันทึก')"
+                >
+                    Warning
+                </button>
+                <button 
+                    class="btn btn-danger mb-1 me-1" 
+                    onclick="alert('error','เกิดข้อผิดพลาด','ไม่พบข้อมูลที่บันทึก')"
+                >
+                    Error
+                </button>
+            </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/sidebar.js"></script>
+    <script src="./js/alert.js"></script>
 </body>
 </html>

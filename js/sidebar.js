@@ -82,10 +82,10 @@ contentSidebar.innerHTML = sidebar
 
 const checkScreenWidth = () => {
   let sidebar = document.querySelector('.sidebar')
-  if (window.screen.width > 768) {
-    sidebar.classList.remove('active')
-  }else{
+  if (window.screen.width <= 768) {
     sidebar.classList.add('active')
+  }else{
+    sidebar.classList.remove('active')
   }
 }
 window.addEventListener('resize', checkScreenWidth)

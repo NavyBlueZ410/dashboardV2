@@ -8,6 +8,8 @@
     list-style: none;
     scroll-behavior: smooth;
 }
+/* reove focus button alert */
+.swal2-popup .swal2-styled:focus { box-shadow: none !important; }
 :root{
     --color-primary: #1C1B3B;
     --color-light-primary: #36346d;
@@ -24,6 +26,7 @@
 /* scrollbar ========= */
 ::-webkit-scrollbar{
     width: 0.5rem;
+    height: 0.5rem;
 }
 ::-webkit-scrollbar-thumb{
     background-color: var(--color-primary);
@@ -75,6 +78,212 @@
 .btn-warning:hover{
     background-color: var(--color-dark-warning);
     transition: 0.3s ease;
+}
+/* margin setting ========= */
+/* auto */
+.mx-auto{
+    margin: 0 auto;
+}
+.my-auto{
+    margin: auto 0;
+}
+/* all */
+.m-1{
+    margin: 1rem;
+}
+.m-2{
+    margin: 2rem;
+}
+.m-3{
+    margin: 3rem;
+}
+.m-4{
+    margin: 4rem;
+}
+.m-5{
+    margin: 5rem;
+}
+.m-6{
+    margin: 6rem;
+}
+/* start */
+.ms-1{
+    margin-left: 1rem;
+}
+.ms-2{
+    margin-left: 2rem;
+}
+.ms-3{
+    margin-left: 3rem;
+}
+.ms-4{
+    margin-left: 4rem;
+}
+.ms-5{
+    margin-left: 5rem;
+}
+.ms-6{
+    margin-left: 6rem;
+}
+/* end */
+.me-1{
+    margin-right: 1rem;
+}
+.me-2{
+    margin-right: 2rem;
+}
+.me-3{
+    margin-right: 3rem;
+}
+.me-4{
+    margin-right: 4rem;
+}
+.me-5{
+    margin-right: 5rem;
+}
+.me-6{
+    margin-right: 6rem;
+}
+/* top */
+.mt-1{
+    margin-top: 1rem;
+}
+.mt-2{
+    margin-top: 2rem;
+}
+.mt-3{
+    margin-top: 3rem;
+}
+.mt-4{
+    margin-top: 4rem;
+}
+.mt-5{
+    margin-top: 5rem;
+}
+.mt-6{
+    margin-top: 6rem;
+}
+/* bottom */
+.mb-1{
+    margin-bottom: 1rem;
+}
+.mb-2{
+    margin-bottom: 2rem;
+}
+.mb-3{
+    margin-bottom: 3rem;
+}
+.mb-4{
+    margin-bottom: 4rem;
+}
+.mb-5{
+    margin-bottom: 5rem;
+}
+.mb-6{
+    margin-bottom: 6rem;
+}
+/* padding setting ========= */
+/* auto */
+.px-auto{
+    padding: 0 auto;
+}
+.py-auto{
+    padding: auto 0;
+}
+/* all */
+.p-1{
+    padding: 1rem;
+}
+.p-2{
+    padding: 2rem;
+}
+.p-3{
+    padding: 3rem;
+}
+.p-4{
+    padding: 4rem;
+}
+.p-5{
+    padding: 5rem;
+}
+.p-6{
+    padding: 6rem;
+}
+/* start */
+.ps-1{
+    padding-left: 1rem;
+}
+.ps-2{
+    padding-left: 2rem;
+}
+.ps-3{
+    padding-left: 3rem;
+}
+.ps-4{
+    padding-left: 4rem;
+}
+.ps-5{
+    padding-left: 5rem;
+}
+.ps-6{
+    padding-left: 6rem;
+}
+/* end */
+.pe-1{
+    padding-right: 1rem;
+}
+.pe-2{
+    padding-right: 2rem;
+}
+.pe-3{
+    padding-right: 3rem;
+}
+.pe-4{
+    padding-right: 4rem;
+}
+.pe-5{
+    padding-right: 5rem;
+}
+.pe-6{
+    padding-right: 6rem;
+}
+/* top */
+.pt-1{
+    padding-top: 1rem;
+}
+.pt-2{
+    padding-top: 2rem;
+}
+.pt-3{
+    padding-top: 3rem;
+}
+.pt-4{
+    padding-top: 4rem;
+}
+.pt-5{
+    padding-top: 5rem;
+}
+.pt-6{
+    padding-top: 6rem;
+}
+/* bottom */
+.pb-1{
+    padding-bottom: 1rem;
+}
+.pb-2{
+    padding-bottom: 2rem;
+}
+.pb-3{
+    padding-bottom: 3rem;
+}
+.pb-4{
+    padding-bottom: 4rem;
+}
+.pb-5{
+    padding-bottom: 5rem;
+}
+.pb-6{
+    padding-bottom: 6rem;
 }
 /* loading ========= */
 .contentLoading{
@@ -247,12 +456,14 @@
     transition: 0.3s ease;
 }
 .sidebar.active .title-header i{
-    top: 7rem;
-    left: 3.5rem;
+    top: 5rem;
+    /* left: 3.5rem; */
+    right: -103vw;
     background-color: var(--color-danger);
-    border-radius: 0 0.5rem 0.5rem 0;
+    border-radius: 0.5rem 0 0 0.5rem;
     display: block;
     transition: 0.3s ease;
+    padding-right: 1rem;
 }
 .container{
     position: relative;
@@ -288,4 +499,7 @@
 .footer-menu:hover{
     background-color: var(--color-dark-danger);
     transition: 0.3s ease;
+}
+.header-content{
+    margin-bottom: 1rem;
 }
